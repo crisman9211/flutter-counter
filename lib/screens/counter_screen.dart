@@ -35,27 +35,21 @@ class _CounterScreenState extends State<CounterScreen> {
           FloatingActionButton(
             child: const Icon(Icons.exposure_minus_1),
             onPressed: () {
-              print('minus');
               counter--;
-              print('$counter');
               setState(() {});
             },
           ),
           FloatingActionButton(
             child: const Icon(Icons.refresh),
             onPressed: () {
-              print('Reset');
               counter = 0;
-              print('$counter');
               setState(() {});
             },
           ),
           FloatingActionButton(
             child: const Icon(Icons.plus_one),
             onPressed: () {
-              print('add');
               counter++;
-              print('$counter');
               setState(() {});
             },
           ),
